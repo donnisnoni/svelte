@@ -7,7 +7,7 @@ title: Template syntax
 
 ---
 
-A lowercase tag, like `<div>`, denotes a regular HTML element. A capitalised tag, such as `<Widget>` or `<Namespace.Widget>`, indicates a *component*.
+A lowercase tag, like `<div>`, denotes a regular HTML element. A capitalized tag, such as `<Widget>` or `<Namespace.Widget>`, indicates a *component*.
 
 ```sv
 <script>
@@ -115,7 +115,7 @@ An element or component can have multiple spread attributes, interspersed with r
 
 ---
 
-*`$$restProps`* contains only the props which are *not* declared with `export`. It can be used to pass down other unknown attributes to an element in a component. It shares the same optimisation problems as *`$$props`*, and is likewise not recommended.
+*`$$restProps`* contains only the props which are *not* declared with `export`. It can be used to pass down other unknown attributes to an element in a component. It shares the same optimization problems as *`$$props`*, and is likewise not recommended.
 
 ```html
 <input {...$$restProps}>
@@ -158,7 +158,7 @@ You can use HTML comments inside components.
 
 ---
 
-Comments beginning with `svelte-ignore` disable warnings for the next block of markup. Usually these are accessibility warnings; make sure that you're disabling them for a good reason.
+Comments beginning with `svelte-ignore` disable warnings for the next block of markup. Usually, these are accessibility warnings; make sure that you're disabling them for a good reason.
 
 ```sv
 <!-- svelte-ignore a11y-autofocus -->
@@ -223,7 +223,7 @@ Additional conditions can be added with `{:else if expression}`, optionally endi
 
 ---
 
-Iterating over lists of values can be done with an each block.
+Iterating over lists of values can be done with an `each` block.
 
 ```sv
 <h1>Shopping list</h1>
@@ -378,7 +378,7 @@ This is useful if you want an element to play its transition whenever a value ch
 
 ---
 
-When used around components, this will cause them to be reinstantiated and reinitialised.
+When used around components, this will cause them to be re-instantiated and reinitialized.
 
 ```sv
 {#key value}
@@ -479,7 +479,7 @@ The `{@const ...}` tag defines a local constant.
 
 ### Element directives
 
-As well as attributes, elements can have *directives*, which control the element's behaviour in some way.
+As well as attributes, elements can have *directives*, which control the element's behavior in some way.
 
 
 #### on:*eventname*
@@ -593,7 +593,7 @@ The simplest bindings reflect the value of a property, such as `input.value`.
 
 ---
 
-If the name matches the value, you can use a shorthand.
+If the name matches the value, you can use shorthand.
 
 ```sv
 <!-- These are equivalent -->
@@ -750,7 +750,7 @@ Videos additionally have readonly `videoWidth` and `videoHeight` bindings.
 
 ---
 
-Block-level elements have 4 readonly bindings, measured using a technique similar to [this one](http://www.backalleycoder.com/2013/03/18/cross-browser-event-based-element-resize-detection/):
+Block-level elements have 4 read-only bindings, measured using a technique similar to [this one](http://www.backalleycoder.com/2013/03/18/cross-browser-event-based-element-resize-detection/):
 
 * `clientWidth`
 * `clientHeight`
